@@ -24,6 +24,7 @@ class Input extends Component
     render()
     {
         //todo: make this input only allow numbers, up to 60
+        //if the js for this is too fiddly/difficult just make a number tag with step of 60
         return(
         <input type="text"
         onKeyPress={this.updateState.bind(this)}>
