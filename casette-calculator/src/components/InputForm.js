@@ -13,10 +13,9 @@ class InputForm extends Component
                 <InputRow>
                 
                 </InputRow>
-                <InputRow>
-                
-                </InputRow>
-                {/* todo: make it so clicking on the last input row to type makes another input row */}
+                {/* todo: make it so clicking on the last input row to type makes another input row.
+                 to make this dynamically add rows,  if the second to last child's last child (i.e. the last input seconds) has a value of ""
+                on focus of it, append a child to this element of type input row*/}
                 <SubmitButton>
 
                 </SubmitButton>

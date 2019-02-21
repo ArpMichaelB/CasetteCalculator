@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Input from '../components/Input.js';
+import InputSeconds from '../components/InputSeconds.js';
+import InputMinutes from '../components/InputMinutes.js';
 
 
 class InputRow extends Component 
@@ -9,13 +10,13 @@ class InputRow extends Component
         
         return(
             <div className="inputrow">                
-                <Input>
+                <InputMinutes className="minute">
                 
-                </Input>
+                </InputMinutes>
                 :
-                <Input>
+                <InputSeconds className="second">
                 
-                </Input>
+                </InputSeconds>
             </div>
         )
     }
