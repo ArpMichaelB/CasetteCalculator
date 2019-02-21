@@ -2,58 +2,18 @@ import React, { Component } from 'react';
 
 class Input extends Component 
 {
-    constructor(){
-        super();
-        this.updateState = this.updateState.bind(this);
-        this.checkInput = this.checkInput.bind(this);
-        this.state={currentKey:-2};
-    }
-    checkInput()
-    {
-        if(this.state.currentKey === -2)
-        {
-            console.log("startup");
-        }
-        else if(this.state.currentKey <0)
-        {
-            console.log("incorrect");
-            this.state.eventTarget.value = this.state.eventTarget.value.slice(0,this.state.eventTarget.value.length-1);
-        }
-        else
-        {
-            this.state.eventTarget.value = this.state.eventTarget.value.slice(0,this.state.eventTarget.value.length-1) + this.state.currentKey;
-            console.log(this.state.currentKey);
-        }
-    }
-    updateState(event)
-    {
-        var code = event.key;
-        //so turns out which is the system dependant keycode
-        //but I lean p heavily on us getting event.key's results
-        //so rather than having some unpredicted actions I'm not gonna include which
-        if(code>=0 && code <= 9)
-        {
-            this.setState({
-                currentKey: code,
-                eventTarget: event.target
-            });
-        }
-        else
-        {
-            this.setState({
-                currentKey:-1,
-                eventTarget: event.target
-            });
-        }        
-        this.checkInput();
-    }
     render()
     {
-        //todo: make this input only allow numbers, up to 60
-        //if the js for this is too fiddly/difficult just make a number tag with step of 60
+        //okay so after a great deal of fiddling it's become clear that what I'm trying to do isn't exactly tenable
+        //when I type a "wrong" input in the middle then keep typing correct things it's alternating between what's actually been placed
+        //and the string with the wrong input in the middle with the key appended at the end
+        //plus everything is a step behind keystroke wise because of the way I'm handling state here
+        //so I'm just going to do a number tag
+        //potentially to still have some neat javascript happening bts, I might tie something to the change event
+        //so that if the class is seconds, and we're incrementing to 60, it increments the minutes of it's compatriot in the input row
+
         return(
-        <input type="text"
-        onKeyDown={this.updateState.bind(this)}>
+        <input type="number" min="0" max="60">
         </input>)
     }
 }
