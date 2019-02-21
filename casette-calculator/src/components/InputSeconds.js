@@ -8,10 +8,17 @@ class InputSeconds extends Component
     }
     increment(event)
     {
+        event.target.value = event.target.value.replace(/[^0-9]/g,"");
+        //so turns out regular expressions are a whole argument type in JS instead of having strings of the given regex
+        var value = parseInt(event.target.value,10);
+        if(value>60)
+        {
+            event.target.value = 60;
+        }
+        //these lines are only used in the case of the input box not being a number type
         if(parseInt(event.target.value,10) === 60)
         {
             event.target.value = 0;
-            console.log(event.target.previousElementSibling.value);
             if(event.target.previousElementSibling.value !== "")
             {
                 var minutes = parseInt(event.target.previousElementSibling.value, 10);
@@ -28,7 +35,7 @@ class InputSeconds extends Component
     {
         return(
         <input type="number" min="0" max="60" 
-        onInput={this.increment.bind(this)}>
+        onChange={this.increment.bind(this)}>
         </input>)
     }
 }
