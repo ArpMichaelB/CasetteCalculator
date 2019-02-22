@@ -1,4 +1,5 @@
-import { Component } from 'react';
+import  React, { Component } from 'react';
+import { setLength } from '../scripts/LengthSetter';
 
 
 class LengthPicker extends Component 
@@ -7,10 +8,16 @@ class LengthPicker extends Component
     {
         
         return(
-            "not yet"
-            //a set of radio buttons for common casette lengths, i.e. 90 and 110 minutes
-            //basically all it'll do is set a prop in the page that's the total available time
-            //it'll get used by submit button to tell where to put the side markers and the "you're out of time" thing
+            <div className="lengthselector">
+                <input type="radio" name="length" value="60" onChange={setLength}/>
+                <label htmlFor="60">60</label>
+                <input type="radio" name="length" value="74" onChange={setLength}/>
+                <label htmlFor="74">74</label>
+                <input type="radio" name="length" value="90" onChange={setLength}/>
+                <label htmlFor="90">90</label>
+                <input type="radio" name="length" value="110" onChange={setLength}/>
+                <label htmlFor="110">110</label>
+            </div>
         )
     }
 }

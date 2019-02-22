@@ -9,7 +9,8 @@ class SubmitButton extends Component
         return(
             <input type = "button"
             value = "Calculate"
-            onClick={totalTime}>
+            onClick={totalTime}
+            className="calculationButton">
             </input>
         )
     }
