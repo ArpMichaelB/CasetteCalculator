@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
-import Input from '../components/Input.js';
+import InputSeconds from '../components/InputSeconds.js';
+import InputMinutes from '../components/InputMinutes.js';
+import { addRow } from '../scripts/RowScripts.js';
 
 
 class InputRow extends Component 
 {
     render()
     {
-        
         return(
             <div className="inputrow">                
-                <Input>
+                <InputMinutes className="minute">
                 
-                </Input>
+                </InputMinutes>
                 :
-                <Input>
+                <InputSeconds className="second">
                 
-                </Input>
+                </InputSeconds>
+                <input type="button" onClick={addRow} className="newRow" value="New Row"></input>
             </div>
         )
     }

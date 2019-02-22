@@ -13,10 +13,6 @@ class InputForm extends Component
                 <InputRow>
                 
                 </InputRow>
-                <InputRow>
-                
-                </InputRow>
-                {/* todo: make it so clicking on the last input row to type makes another input row */}
                 <SubmitButton>
 
                 </SubmitButton>
