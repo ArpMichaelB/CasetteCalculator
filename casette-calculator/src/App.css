@@ -1,3 +1,15 @@
+body
+{
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+input
+{
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+input[type=number]
+{
+  font-family: 'Share Tech Mono', monospace;
+}
 input[type=number]::-webkit-inner-spin-button
 {
   display:none;
@@ -20,7 +32,9 @@ input[type=button]:focus
   add a border of woodgrain and the normal background of silver on the pagewrapper 
   The general vibe I'm going for is the look of an old hifi tapedeck vibe
   */
-  background-color:burlywood;
+  background-image:url("./Woodgrain.png");
+  background-color: #C19A6B;
+  background-size: contain;
   padding: .5em;
   padding-top: 2em;
   padding-bottom: 2em;
