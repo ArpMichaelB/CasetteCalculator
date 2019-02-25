@@ -1,33 +1,77 @@
-.App {
-  text-align: center;
+body
+{
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+input
+{
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type=number]
+{
+  font-family: 'Share Tech Mono', monospace;
 }
-
-.App-link {
-  color: #61dafb;
+input[type=number]::-webkit-inner-spin-button
+{
+  display:none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type=number]::-webkit-outer-spin-button
+{
+  display:none;
+}
+.inputrow input[type=number]:focus
+{
+  outline:#4ac3b7 groove;
+}
+input[type=button]:focus
+{
+  outline:#e6e6e6 ridge;
+}
+.pageWrapper
+{
+  /* 
+  add a border of woodgrain and the normal background of silver on the pagewrapper 
+  The general vibe I'm going for is the look of an old hifi tapedeck vibe
+  */
+  background-image:url("./Woodgrain.png");
+  background-color: #C19A6B;
+  background-size: contain;
+  padding: .5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  align-content: center;
+}
+.newRow, .calculationButton
+{
+  background-image: radial-gradient(circle farthest-side at center, #f2f2f2, silver);
+}
+.timeDisplay
+{
+  animation-name: foldInTime;
+  animation-duration: 3s;
+  background-color:#f2f2f2;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.timeDisplayOverlimit
+{
+  animation-name: foldInTime;
+  animation-duration: 3s;
+  background-image: #f2f2f2;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  color:red;
+  font-weight: bolder;
+}
+@keyframes foldInTime
+{
+    0%
+    {
+      height:0em;
+      transform: scaleY(0);
+    }
+    100%
+    {
+      height:1.7em;
+      transform: scaleY(1);
+    } 
 }
