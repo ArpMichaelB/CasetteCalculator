@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import InputSeconds from '../components/InputSeconds.js';
-import InputMinutes from '../InputMinutes.js';
+import InputSeconds from '../InputSeconds/InputSeconds.js';
+import InputMinutes from '../InputMinutes/InputMinutes.js';
 import { addRow } from '../../scripts/RowScripts.js';
+import "./InputRow.css";
 
 
 class InputRow extends Component 

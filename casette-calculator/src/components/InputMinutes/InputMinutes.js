@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { increment } from '../scripts/IncrementScripts';
-
+import { increment } from '../../scripts/IncrementScripts';
+import "./InputMinutes.css";
 class InputMinutes extends Component 
 {
     

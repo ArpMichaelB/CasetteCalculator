@@ -1,4 +1,9 @@
-#inputform
+.inputform
 {
-    /*align htings nicely*/
+    background-color: silver;
+    padding: 1em;
+}
+.inputform .inputrow
+{
+    background-color: black;
 }

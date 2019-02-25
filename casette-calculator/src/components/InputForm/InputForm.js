@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import InputRow from './InputRow/InputRow.js/index.js';
-import SubmitButton from '../components/SubmitButton.js';
+import InputRow from '../InputRow/InputRow.js';
+import SubmitButton from '../SubmitButton/SubmitButton.js';
+import "./InputForm.css";
 
 
 class InputForm extends Component 

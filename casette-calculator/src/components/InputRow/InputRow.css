@@ -1,4 +1,5 @@
-#newRow
+.newRow
 {
     /*neat gradient on the background to look like it's a shiny button*/
+    border-radius: 90%;
 }

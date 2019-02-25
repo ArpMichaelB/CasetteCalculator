@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { totalTime } from '../scripts/TotalTime';
+import { totalTime } from '../../scripts/TotalTime';
+import "./SubmitButton.css";
 
 class SubmitButton extends Component 
 {

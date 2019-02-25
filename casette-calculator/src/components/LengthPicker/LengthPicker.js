@@ -1,5 +1,6 @@
 import  React, { Component } from 'react';
-import { setLength } from '../scripts/LengthSetter';
+import { setLength } from '../../scripts/LengthSetter';
+import "./LengthPicker.css";
 
 
 class LengthPicker extends Component 

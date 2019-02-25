@@ -1,7 +1,15 @@
-#pageWrapper
+.pageWrapper
 {
   /* 
   add a border of woodgrain and the normal background of silver on the pagewrapper 
   The general vibe I'm going for is the look of an old hifi tapedeck vibe
   */
+  background-color:burlywood;
+  padding: .5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  align-content: center;
 }
+/* add an animation for when the time displays, rolling from brown to silver as if a window is "opening", fix the bottom padding on it's parent element
+also make timeDisplayOverlimit have red text instead
+maybe use this rolling animation when it adds a new row of inputs, and have the inputs add more to the right before splitting at the edge of the page*/

@@ -1,4 +1,5 @@
-#lengthselector
+.lengthselector
 {
     /* the radio buttons inside need to look like "piano key" buttons*/
+    background-color: white;
 }
