@@ -1,3 +1,19 @@
+input[type=number]::-webkit-inner-spin-button
+{
+  display:none;
+}
+input[type=number]::-webkit-outer-spin-button
+{
+  display:none;
+}
+.inputrow input[type=number]:focus
+{
+  outline:#4ac3b7 groove;
+}
+input[type=button]:focus
+{
+  outline:#e6e6e6 ridge;
+}
 .pageWrapper
 {
   /* 
@@ -18,7 +34,7 @@
 {
   animation-name: foldInTime;
   animation-duration: 3s;
-  background-color:silver;
+  background-color:#f2f2f2;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
@@ -26,7 +42,7 @@
 {
   animation-name: foldInTime;
   animation-duration: 3s;
-  background-color:silver;
+  background-image: #f2f2f2;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   color:red;
@@ -45,6 +61,3 @@
       transform: scaleY(1);
     } 
 }
-/* add an animation for when the time displays, rolling from brown to silver as if a window is "opening", fix the bottom padding on it's parent element
-also make timeDisplayOverlimit have red text instead
-maybe use this rolling animation when it adds a new row of inputs, and have the inputs add more to the right before splitting at the edge of the page*/
