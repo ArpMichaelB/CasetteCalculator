@@ -1,5 +1,7 @@
 .newRow
 {
-    /*neat gradient on the background to look like it's a shiny button*/
+    margin-top: 2.2em;
+    margin-right: .1em;
+    float:right;
     border-radius: 90%;
 }

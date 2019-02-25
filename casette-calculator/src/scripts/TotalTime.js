@@ -43,7 +43,14 @@ export const totalTime = (event) =>
                     halfwayMark = document.createElement("span");
                     halfwayMark.appendChild(document.createTextNode("✓"));
                     halfwayMark.className = "halfway";
-                    form.childNodes[i-1].insertBefore(halfwayMark,form.childNodes[i-1].lastChild);
+                    if(i-1>=0)
+                    {
+                        form.childNodes[i-1].insertBefore(halfwayMark,form.childNodes[i-1].lastChild);
+                    }
+                    else
+                    {
+                        form.childNodes[0].insertBefore(halfwayMark,form.childNodes[0].lastChild);
+                    }
                 }
             }
             //if there's already a halfway mark, don't put one on the page

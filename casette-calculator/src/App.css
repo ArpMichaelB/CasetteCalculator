@@ -10,6 +10,41 @@
   padding-bottom: 2em;
   align-content: center;
 }
+.newRow, .calculationButton
+{
+  background-image: radial-gradient(circle farthest-side at center, #f2f2f2, silver);
+}
+.timeDisplay
+{
+  animation-name: foldInTime;
+  animation-duration: 3s;
+  background-color:silver;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.timeDisplayOverlimit
+{
+  animation-name: foldInTime;
+  animation-duration: 3s;
+  background-color:silver;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  color:red;
+  font-weight: bolder;
+}
+@keyframes foldInTime
+{
+    0%
+    {
+      height:0em;
+      transform: scaleY(0);
+    }
+    100%
+    {
+      height:1.7em;
+      transform: scaleY(1);
+    } 
+}
 /* add an animation for when the time displays, rolling from brown to silver as if a window is "opening", fix the bottom padding on it's parent element
 also make timeDisplayOverlimit have red text instead
 maybe use this rolling animation when it adds a new row of inputs, and have the inputs add more to the right before splitting at the edge of the page*/
