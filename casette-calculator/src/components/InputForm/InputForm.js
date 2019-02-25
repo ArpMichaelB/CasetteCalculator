@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import InputRow from '../components/InputRow.js';
+import InputRow from './InputRow/InputRow.js/index.js';
 import SubmitButton from '../components/SubmitButton.js';
 
 

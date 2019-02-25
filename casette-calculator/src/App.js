@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import InputForm from '../src/components/InputForm';
+import InputForm from './components/InputForm/InputForm';
 import './App.css';
 import LengthPicker from './components/LengthPicker';
 
