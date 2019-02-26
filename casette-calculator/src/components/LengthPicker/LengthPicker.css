@@ -29,3 +29,123 @@ label[for="110"]
     position: relative;
     left: -11%;
 }
+@media(max-width:850px)
+{
+    .lengthselector
+    {
+        padding-left: 5%;
+    }
+    /*todo: padding/margin on casette numbering*/ 
+}
+@media(max-width:650px)
+{
+    .lengthselector
+    {
+        padding-left: 3%;
+    }
+}
+@media(max-width:590px)
+{
+    .lengthselector
+    {
+        padding-left: 2%;
+    }
+}
+@media(max-width:550px)
+{
+    .lengthselector
+    {
+        padding-left: 1%;
+    }
+}
+@media(max-width:510px)
+{
+    .lengthselector
+    {
+        padding-left:.5%;
+    }
+}
+@media(max-width:500px)
+{
+    /* resize buttons and fix margins*/
+    .lengthselector
+    {
+        padding-left: 6%;
+    }
+    input[type=radio]
+    {
+        width:20%;
+    }
+}
+@media(max-width:445px)
+{
+    .lengthselector
+    {
+        padding-left: 4%;
+    }
+}
+@media(max-width:390px)
+{
+    .lengthselector
+    {
+        padding-left: 3%;
+    }
+}
+@media(max-width:380px)
+{
+    .lengthselector
+    {
+        padding-left: 2%;
+    }
+}
+@media(max-width:350px)
+{
+    .lengthselector
+    {
+        padding-left: 1%;
+    }
+}
+@media(max-width:335px)
+{
+    .lengthselector
+    {
+        padding-left:.5%;
+    }
+}
+@media(max-width:330px)
+{
+    input[type=radio]
+    {
+        width:19%;
+        height:7em;
+    }
+    .lengthselector
+    {
+        padding-left:3%;
+    }
+}
+@media(max-width:310px)
+{
+    .lengthselector
+    {
+        padding-left:1.5%;
+    }
+}
+@media(max-width:290px)
+{
+    .lengthselector
+    {
+        padding-left:.5%;
+    }
+}
+@media(max-width:275px)
+{
+    input[type=radio]
+    {
+        width:17%;
+    }
+    .lengthselector
+    {
+        padding-left: 6%;
+    }
+}
