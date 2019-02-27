@@ -52,11 +52,11 @@ input[type=button]:focus
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
-.timeDisplayOverlimit
+.timeDisplayOverLimit
 {
   animation-name: foldInTime;
   animation-duration: 3s;
-  background-image: #f2f2f2;
+  background-color: #f2f2f2;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   color:red;
