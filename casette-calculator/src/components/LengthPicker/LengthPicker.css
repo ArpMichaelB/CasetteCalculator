@@ -35,6 +35,10 @@ label[for="110"]
     {
         padding-left: 5%;
     }
+    .inputrow
+    {
+        padding-left: 43%;
+    }
     /*todo: padding/margin on casette numbering*/ 
 }
 @media(max-width:650px)
@@ -42,6 +46,10 @@ label[for="110"]
     .lengthselector
     {
         padding-left: 3%;
+    }
+    .inputrow
+    {
+        padding-left: 40%;
     }
 }
 @media(max-width:590px)
@@ -56,6 +64,16 @@ label[for="110"]
     .lengthselector
     {
         padding-left: 1%;
+    }
+    .inputrow
+    {
+        padding-left:38%;
+    }
+    label[for="110"]
+    {
+        position:absolute;
+        left: 83.4%;
+        top:25.7%;
     }
 }
 @media(max-width:510px)
@@ -97,6 +115,10 @@ label[for="110"]
     {
         padding-left: 2%;
     }
+    .inputrow
+    {
+        padding-left:35%;
+    }
 }
 @media(max-width:350px)
 {
@@ -123,6 +145,19 @@ label[for="110"]
     {
         padding-left:3%;
     }
+    .inputrow
+    {
+        padding-left:33%;
+    }
+}
+@media(max-width:323px)
+{
+    label[for="110"]
+    {
+        position:absolute;
+        left:82%;
+        top:15.8%;
+    }
 }
 @media(max-width:310px)
 {
@@ -137,6 +172,14 @@ label[for="110"]
     {
         padding-left:.5%;
     }
+    .inputrow
+    {
+        padding-left:30%;
+    }
+    label[for="110"]
+    {
+        left:83%;
+    }
 }
 @media(max-width:275px)
 {
@@ -147,5 +190,13 @@ label[for="110"]
     .lengthselector
     {
         padding-left: 6%;
+    }
+    .inputrow
+    {
+        padding-left:29%;
+    }
+    label[for="110"]
+    {
+        left:80%;
     }
 }
